@@ -9,4 +9,6 @@ script:
   - xbuild ContinuosIntegrationWithTravis.sln
   - cd bin
   - ls -a
+  - cd Debug
+  - ls -a
 branches: master
