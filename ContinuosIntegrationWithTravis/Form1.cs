@@ -25,10 +25,12 @@ namespace ContinuosIntegrationWithTravis
 
         public static int GetRandomNumber(int min, int max, Random getrandom)
         {
+            Console.Write("dhoom");
             lock (syncLock)
             { // synchronize
                 return getrandom.Next(min, max);
             }
+            
         }
 
         private Random getrandom;
