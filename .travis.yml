@@ -1,7 +1,8 @@
 ## Travis CI Integration
 language: c
 install:
-  - sudo apt-get install mono-devel mono-gmcs
+  - sudo apt-get update -qq > /dev/null
+  - sudo apt-get install -qq mono-devel mono-gmcs > /dev/null
 script:
   - cd ContinuosIntegrationWithTravis
   - ls -a
