@@ -4,6 +4,7 @@ install:
   - sudo apt-get install mono-devel mono-gmcs
 script:
   - cd ContinuosIntegrationWithTravis
+  - ls -a
   - xbuild ContinuosIntegrationWithTravis.sln
   - cd bin
   - ls -a
