@@ -6,5 +6,6 @@ script:
   - cd ContinuosIntegrationWithTravis
   - xbuild ContinuosIntegrationWithTravis.sln
   - cd bin
+  - ls -la
   - ls -a
 branches: master
